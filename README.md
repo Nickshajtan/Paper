@@ -2,12 +2,8 @@
 
 ### description
 
-Simple site with twig.
+My first template for Drupal CMS based on HTML code.
 
-### designs
-PSD Template Author Dmitry Sinichkin
+### Goal:
 
-### Necessary plugins for the template to work properly
-
-* Timber - support twig files.
-* Custom fields pro - all content fields, also files fields.
+* See Drupal structure - have done
