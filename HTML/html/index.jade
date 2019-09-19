@@ -1,0 +1,116 @@
+doctype html
+html(lang="en")
+    head
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(charset="UTF-8")
+        title
+    body(itemscope="itemscope")
+        //itemtype="http://schema.org/WebPage")
+        .global-wrapper
+            header(itemscope itemtype="http://schema.org/Header")
+                .header-container
+                    nav.navbar-fixed-top.navbar(itemscope itemtype="http://www.schema.org/SiteNavigationElement" role="navigation")
+                    .navbar-header.container-fluid
+                        button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false")
+                            span.sr-only Toggle navigation
+                            span.icon-bar
+                            span.icon-bar
+                            span.icon-bar
+                    //Dropdown menu
+                    .collapse.navbar-collapse#bs-navbar-collapse
+                        ul.nav.navbar-nav.nav_menu(role="menu")
+                            li(tabindex="-1")
+                                a(href="#featured_product" itemprop="url" ) featured product
+                            li(tabindex="-1")
+                                a(href="#latest_video" itemprop="url") latest videos
+                            li(tabindex="-1")
+                                a(href="#latest_uploads" itemprop="url") look closer
+                            li(tabindex="-1")
+                                a(href="#hot_news" itemprop="url") hot news
+                    h1.sitename(itemprop='headline') the black matrix
+                    p.sitedescription(itemprop='description')
+            .container(itemscope itemtype="http://schema.org/Article")
+                .clearfix
+                //Block of latest uploads
+                section.block.first-block
+                    .block-title
+                        h2.block-name#latest_uploads latest uploads
+                    .row
+                        -var i=0;
+                        -while( i<6 )
+                        .col-sm-4(itemprop='articleBody')= i++
+                        .wrapper
+                            h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            p.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                        // -if ( i=3 )
+                             .clerfix
+
+                //Block of Video&Blog
+                section.block.second-block
+                    //Video
+                    .col-sm-6(itemprop='articleBody')
+                        .block-title
+                            h2.block-name#latest_video brows video
+                        -var n=0;
+                        -while( n<3 )
+                        .col-sm-12= n++
+                        .wrapper
+                            h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            p.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+
+                    //Blog
+                    .col-sm-6
+                        .block-title
+                            h2.block-name#hot_news blog
+                        .single-post.col-sm-12(itemprop='articleBody')
+                            .wrapper
+                                h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                p.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat.
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                //Block of Featured Product
+                section.block.third-block
+                    .block-title
+                        h2.block-name#featured_product featured product
+                    .row
+                        //Logo
+                        .col-sm-4
+                            img
+                        //Text&button
+                        .col-sm-8
+                            .wrapper
+                                h3 multi-purpose survial blanket!
+                                p.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat.
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                                    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                    sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                                button learn more
+            footer(itemscope itemtype="http://schema.org/Footer")
+                .clearfix
+                .row
+                    -var k=0;
+                    -while( k <3 )
+                    .col-sm-4= k++
+                    // -if( k =2 )
+                         .sprite
+                .container-fluid
+

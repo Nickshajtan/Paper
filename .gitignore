@@ -1,0 +1,5 @@
+#*.md
+*.csv
+HTML/.idea
+HTML/node_modules
+HTML/psd
